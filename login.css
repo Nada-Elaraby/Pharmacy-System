@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(193, 220, 197);
+    font-family: 'Tajawal', sans-serif;
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    box-shadow:1px 1px 10px rgb(0, 0, 0);
+    border:1px solid rgb(22, 71, 47);
+    border-radius: 22px;
+}
+.box h1{
+    color: rgb(26, 137, 86);
+    font-weight: 500;
+    font-family: 'Tajawal', sans-serif;
+}
+.box input[type="text"], .box input[type="password"] ,.box input[type="email"] ,.box input[type="phone"]{
+    border:0;
+    width: 240px;
+    background-color: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border:2px solid rgb(26, 137, 86);
+    padding:14px 10px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 16px;
+    }
+    .box input[type=text]:focus, .box input[type="password"]:focus,.box input[type="email"]:focus ,.box input[type="phone"]:focus{
+        width:280px;
+        border-color: rgb(0, 255, 30);
+    }
+    .box input[type="submit"]{
+        border:0;
+        width:240px;
+        background-color: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border:2px solid rgb(26, 137, 86);
+        padding: 14px 40px; 
+        outline: none;
+        color: black;
+        border-radius: 24px;
+        transition: 0.20s;
+        cursor: pointer;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 16px;
+    }
+    .box input[type="submit"]:hover{
+        background-color: rgb(26, 137, 86);
+        color: rgb(248, 250, 215);
+    }
+.box h3{
+    color:rgb(98, 99, 98);
+
+}
+.box h3 a{
+    text-decoration: none;
+    color: rgb(32, 167, 122);
+}
+

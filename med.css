@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+
+
+:root{
+    --black: black;
+    --dark-green:#487648;
+    --green: rgb(0, 128, 26);
+    --light-color:#666666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'andika';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s Linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fff;
+}
+
+/*header*/
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo img{
+    margin-top: 10px;
+    height: 8rem;
+    width: 8rem;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.header .headbar a{
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--light-color);
+}
+
+.header .headbar a:hover{
+    color: #fff;
+    background: linear-gradient(120deg,#a3e9bf 40%,#33995c);
+}
+
+.header .menubtn{
+    margin-right: 60px;
+}
+
+.header .menubtn button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-image: linear-gradient(to right,#bdf06a,#15864a,#88d650);
+    border-radius: 10px;
+}
+
+.header .icon div{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+.header .icon div:hover{
+    color: #fff;
+    background: linear-gradient(120deg,#a3e9bf 40%,#33995c);
+}
+
+.header .search-form{
+    border: 1px solid;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active{
+    right: 2rem;
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+
+}
+
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search-form label:hover{
+    color: var(--dark-pink);
+}
+
+.header .shopping-cart{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 35rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.header .shopping-cart.active{
+    right: 2rem;
+    transition: -4s linear;
+}
+
+.header .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.header .shopping-cart .box img{
+    height: 10rem;
+    width: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.header .shopping-cart .box .fa-trash{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 30rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover{
+    color: var(--dark-green);
+}
+
+.header .shopping-cart .box .content h3{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span{
+    color: var(--light-color);
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header .upload-form{
+    border: 1px solid;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .upload-form.active{
+    right: 2rem;
+}
+
+.header .upload-form .btn{
+    height: 50px;
+    width: 200px;
+}
+
+.header .upload-form .btn button{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(120deg,#a3e9bf 40%,#33995c);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header .upload-form .btn button:hover{
+    color: var(--dark-green);
+}
+
+.header .upload-form .file-name{
+    position: relative;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-left: 15px;
+    user-select: none;
+}
+
+/*header*/
+
+/*medicin section*/
+
+.card{
+    background-color:#ffff ;
+    width:21.25em;
+    box-shadow: 0 5px 25px rgba(1,1,1);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 50px;
+    transition: 0.7s ease;
+    display:inline-block;
+}
+.card:hover{
+    transform: scale(1.1);
+   }
+
+.card a{
+    text-decoration: none;
+    width:100%
+} 
+.card .my-button{
+    text-decoration: none;
+    width:100%
+} 
+.title{
+    text-align: center;
+    color: #141414;
+}
+.slide-img{
+    height: 120px;
+    position: relative;
+    
+}
+
+.slide-img img{
+    padding-top: 0;
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 247, 223, 0.6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 0;
+    color: rgb(71, 113, 71);
+}
+
+.learn-btn{
+    width: 80px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #252525;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'andika';
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    
+}
+
+.learn-btn:hover{
+    color:rgb(151, 194, 151);
+   
+    transition: all ease 0.3s;
+}
+
+.overlay{
+    visibility: hidden;
+}
+
+.slide-img:hover .overlay{
+    visibility: visible;
+    animation: fade 0.5s;
+}
+
+
+
+
+.price{
+    color:rgb(12, 50, 12);
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'andika';
+    letter-spacing: 0.5px;
+    text-align: center;
+    display:block;
+}
+
+.stars{
+    padding-left: 20%;
+}
+
+.stars i{
+    font-size: 1.7rem;
+    color: var(--dark-green);
+    padding: .5rem 0;
+}
+
+.my-button{
+    display: inline-block;
+    margin: 5px;
+    background: rgb(74, 137, 74);
+    color: #0f0f0f;
+    font-size: 1.5em;
+    font-family: 'georgia',serif;
+    font-style: italic;
+    border-radius: 50px;
+    padding: 8px 16px;
+    -maz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    padding-right: 20px;
+    text-align: center;
+    transition: 0.4s ease;
+    
+}
+
+.my-button:hover{
+    color: #c1e1e0;
+    background: rgb(24, 41, 24);
+    transform: scale(1.1);
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.bottom .container .heading{
+    padding-top: 8%;
+    color: #3d6835;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.bottom .container hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-style: inset;
+    border-width: 3px;
+}
+
+.cards .container .heading{
+    padding-top: 8%;
+    color: #3d6835;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.cards .container hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-style: inset;
+    border-width: 3px;
+}
+
+/*footer*/
+.footer {
+    background:#99f19e ;
+    color: rgb(82, 243, 168);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer.title {
+    font-size: 8rem;
+    font-weight: 1000;
+}
+.footer.title span {
+    color: rgb(68, 117, 82);
+}
+.footer  a {
+font-size: 3em;
+color:rgb(53, 142, 55);
+justify-content: space-between;
+margin: 10px;
+}
+.footer h1{
+    font-size: 3em;
+    color:rgb(53, 142, 55);
+
+}
+
+/*footer*/
+
+/*contact*/
+.card-inf{
+    background-color:rgb(225, 250, 244) ;
+    width:21.25em;
+    box-shadow: 0 5px 25px rgba(1,1,1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 95px;
+    transition: 0.7s ease;
+    display: inline-block;
+    position:relative;
+    
+     
+ 
+}
+.card-inf:hover{
+    transform: scale(1.1);
+   }
+.icon-contect {
+    color:rgb(241, 244, 194);
+    font-size: 4em;
+    text-align: center;
+    
+
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color:rgb(53, 142, 55);
+    font-size:1.2em;
+    font-weight: 700;
+    margin:10px;
+}  
+.card-inf a{
+    text-decoration: none;
+} 
+.card-inf a:hover{
+    color:rgb(43, 226, 70)
+}   
+   
+    
+.contact.icon-contect{
+    font-size: 4.5em; 
+}
+.contact.info p{
+   font-size: 1.5em;
+ }
+/*contact*/
+
+/*medicin section*/
+

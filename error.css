@@ -1,0 +1,38 @@
+body{
+    font-family: 'Tajawal', sans-serif;
+
+}
+div{
+    width: 100%;
+}
+div h2{
+    font-family: 'Tajawal', sans-serif;
+
+}
+div div{
+    width: 395px;
+    background-color: rgb(219, 221, 247);
+    font-family: 'Tajawal', sans-serif;
+    border-radius: 15px;
+}
+div button{
+    width: 220px;
+    padding: 15px;
+    margin-bottom:20px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 22px;
+    background-color: rgb(102, 130, 214);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .25s;
+
+}
+div button:hover{
+    background-color: rgb(187, 129, 202);
+}
+ div p{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(132, 130, 130);
+ }

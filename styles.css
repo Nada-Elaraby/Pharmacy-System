@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+
+:root{
+    --black: black;
+    --green: rgb(0, 128, 26);
+    --light-color:#666666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'andika';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s Linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fff;
+}
+
+/*header*/
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo img{
+    margin-top: 10px;
+    height: 140%;
+    width: 95%;
+    display: inline-block;
+}
+
+.header .headbar a{
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--light-color);
+}
+
+.header .headbar a:hover{
+    color: #fff;
+    background: linear-gradient(120deg,#a3e9bf 40%,#33995c);
+}
+
+.header .menubtn{
+    margin-right: 60px;
+}
+
+.header .menubtn button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-image: linear-gradient(to right,#bdf06a,#15864a,#88d650);
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+.header .menubtn .bform button:hover
+{
+    transform: scale(1.1);
+}
+/*header*/
+
+
+/*main*/
+
+.main{
+    width: 100%;
+    display: flex;
+}
+
+.main .left{
+    padding-left: 50px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.main .left h2{
+    padding-top: 46%;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--light-color);
+    margin-top: 100px;
+}
+
+.main .left h1{
+    font-size: 42px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.main .left p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: var(--light-color);
+}
+
+.main .left button{
+    padding-top: 12px;
+    padding: 15px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid;
+    box-shadow: var(--box-shadow);
+    background-image: linear-gradient(to right,#bdf06a,#15864a,#88d650);
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+.main .left button:hover{
+    transform: scale(1.1);
+}
+
+.main .right img{
+    padding-top: 25%;
+    width: 85%;
+    height: 55%;
+    display: flex;
+    transition: 0.7s ease;
+}
+.main .right img:hover{
+    transform: scale(1.1);
+}
+
+/*main*/
+
+/*footer*/
+.footer {
+    background:#99f19e ;
+    color: rgb(82, 243, 168);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer.title {
+    font-size: 8rem;
+    font-weight: 1000;
+}
+.footer.title span {
+    color: rgb(68, 117, 82);
+}
+.footer  a {
+font-size: 3em;
+color:rgb(53, 142, 55);
+justify-content: space-between;
+margin: 10px;
+}
+.footer h1{
+    font-size: 3em;
+    color:rgb(53, 142, 55);
+
+}
+
+/*footer*/
+
+/*contact*/
+.card{
+    background-color:rgb(225, 250, 244) ;
+    width:21.25em;
+    box-shadow: 0 5px 25px rgba(1,1,1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 95px;
+    transition: 0.7s ease;
+    display: inline-block;
+    position:relative;
+    
+     
+ 
+}
+.card:hover{
+    transform: scale(1.1);
+   }
+.icon {
+    color:rgb(241, 244, 194);
+    font-size: 4em;
+    text-align: center;
+    
+
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color:rgb(53, 142, 55);
+    font-size:1.2em;
+    font-weight: 700;
+    margin:10px;
+}  
+.card a{
+    text-decoration: none;
+} 
+.card a:hover{
+    color:rgb(43, 226, 70)
+}   
+   
+    
+.contact.icon{
+    font-size: 4.5em; 
+}
+.contact.info p{
+   font-size: 1.5em;
+ }
+/*contact*/

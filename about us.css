@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+
+:root{
+    --black: black;
+    --green: rgb(0, 128, 26);
+    --light-color:#666666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'andika';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s Linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+/* * {
+    font-size: 100%;
+    font-family: Arial;
+} */
+
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo img{
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+
+.header .headbar a{
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--light-color);
+}
+
+.header .headbar a:hover{
+    color: #fff;
+    background: linear-gradient(120deg,#a3e9bf 40%,#33995c);
+}
+
+.header .menubtn{
+    margin-right: 60px;
+}
+
+.header .menubtn button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-image: linear-gradient(to right,#bdf06a,#15864a,#88d650);
+    border-radius: 10px;
+}
+
+.about {
+    background: url(bg.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-section {
+    width: 55%;
+    float: right;
+    background-color: #b2a3c1;
+    padding: 140px;
+    box-shadow: 13px 12px 8px rgba(83, 133, 146, 175);
+    background: linear-gradient(120deg,#a3e9bf 40%,#33995c);
+}
+
+.inner-section h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #666666;
+}
+
+.text {
+    font-size: 17px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-weight: 550;
+}
+
+.skills button {
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background:linear-gradient(120deg,#33995c, 40%,#a3e9bf);
+    color: white;
+    cursor: pointer;
+}
+
+.skills button:hover {
+    background: linear-gradient(120deg,#a3e9bf 40%,#33995c);
+    transition: 0.5s;
+    color: #666666;
+    
+
+}
+
+@media screen and (max-width:1200px) {
+    .inner-section {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about {
+        padding: 0;
+    }
+
+    .inner-section {
+        padding: 60px;
+    }
+
+    .skills button {
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+
+/*footer*/
+.footer {
+    background:#99f19e ;
+    color: rgb(82, 243, 168);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer.title {
+    font-size: 8rem;
+    font-weight: 1000;
+}
+.footer.title span {
+    color: rgb(68, 117, 82);
+}
+.footer  a {
+font-size: 3em;
+color:rgb(53, 142, 55);
+justify-content: space-between;
+margin: 10px;
+}
+.footer h1{
+    font-size: 3em;
+    color:rgb(53, 142, 55);
+
+}
+
+/*footer*/
+
+/*contact*/
+.card{
+    background-color:rgb(225, 250, 244) ;
+    width:21.25em;
+    box-shadow: 0 5px 25px rgba(1,1,1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 95px;
+    transition: 0.7s ease;
+    display: inline-block;
+    position:relative;
+    
+     
+ 
+}
+.card:hover{
+    transform: scale(1.1);
+   }
+.icon {
+    color:rgb(241, 244, 194);
+    font-size: 4em;
+    text-align: center;
+    
+
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color:rgb(53, 142, 55);
+    font-size:1.2em;
+    font-weight: 700;
+    margin:10px;
+}  
+.card a{
+    text-decoration: none;
+} 
+.card a:hover{
+    color:rgb(43, 226, 70)
+}   
+   
+    
+.contact.icon{
+    font-size: 4.5em; 
+}
+.contact.info p{
+   font-size: 1.5em;
+ }
+/*contact*/
